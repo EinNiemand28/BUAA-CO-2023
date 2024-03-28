@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/file/study/2023Autumn/computer_composition/experiment/P1/P1_L0_ExpressionStateMachine/expr.xst" -ofn "D:/file/study/2023Autumn/computer_composition/experiment/P1/P1_L0_ExpressionStateMachine/expr.syr" 

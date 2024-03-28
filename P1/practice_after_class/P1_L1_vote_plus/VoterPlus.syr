@@ -1,0 +1,434 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: VoterPlus.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VoterPlus.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VoterPlus"
+Output Format                      : NGC
+Target Device                      : xa6slx4-3-csg225
+
+---- Source Options
+Top Module Name                    : VoterPlus
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\file\study\2023Autumn\computer_composition\experiment\P1\practice_after_class\P1_L1_vote_plus\VoterPlus.v" into library work
+Parsing module <VoterPlus>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <VoterPlus>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <VoterPlus>.
+    Related source file is "D:\file\study\2023Autumn\computer_composition\experiment\P1\practice_after_class\P1_L1_vote_plus\VoterPlus.v".
+    Found 8-bit register for signal <st_vip>.
+    Found 32-bit register for signal <st_np>.
+    Found 1-bit register for signal <st_vvip>.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_5_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_9_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_13_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_17_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_21_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_25_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_29_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_33_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_37_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_41_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_45_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_49_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_53_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_57_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_61_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_65_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_69_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_73_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_77_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_81_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_85_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_89_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_93_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_97_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_101_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_105_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_109_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_113_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_117_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_121_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_125_OUT> created at line 38.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_129_OUT> created at line 43.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_133_OUT> created at line 43.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_137_OUT> created at line 43.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_141_OUT> created at line 43.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_145_OUT> created at line 43.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_149_OUT> created at line 43.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_153_OUT> created at line 43.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_157_OUT> created at line 43.
+    Found 8-bit adder for signal <GND_1_o_GND_1_o_add_160_OUT> created at line 47.
+    Summary:
+	inferred  40 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred  40 Multiplexer(s).
+Unit <VoterPlus> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 40
+ 8-bit adder                                           : 40
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 32-bit register                                       : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 40
+ 8-bit 2-to-1 multiplexer                              : 40
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 40
+ 8-bit adder                                           : 40
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+# Multiplexers                                         : 40
+ 8-bit 2-to-1 multiplexer                              : 40
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <VoterPlus> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block VoterPlus, actual ratio is 16.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : VoterPlus.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 226
+#      GND                         : 1
+#      LUT2                        : 43
+#      LUT3                        : 12
+#      LUT4                        : 21
+#      LUT5                        : 53
+#      LUT6                        : 93
+#      MUXF7                       : 3
+# FlipFlops/Latches                : 41
+#      FDC                         : 41
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 50
+#      IBUF                        : 42
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa6slx4csg225-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              41  out of   4800     0%  
+ Number of Slice LUTs:                  222  out of   2400     9%  
+    Number used as Logic:               222  out of   2400     9%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    222
+   Number with an unused Flip Flop:     181  out of    222    81%  
+   Number with an unused LUT:             0  out of    222     0%  
+   Number of fully used LUT-FF pairs:    41  out of    222    18%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          51
+ Number of bonded IOBs:                  51  out of    132    38%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 41    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.736ns (Maximum Frequency: 576.070MHz)
+   Minimum input arrival time before clock: 3.071ns
+   Maximum output required time after clock: 27.947ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.736ns (frequency: 576.070MHz)
+  Total number of paths / destination ports: 41 / 41
+-------------------------------------------------------------------------
+Delay:               1.736ns (Levels of Logic = 1)
+  Source:            st_np_13 (FF)
+  Destination:       st_np_13 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: st_np_13 to st_np_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             15   0.447   0.982  st_np_13 (st_np_13)
+     LUT2:I1->O            1   0.205   0.000  st_np[31]_np[31]_or_164_OUT<13>1 (st_np[31]_np[31]_or_164_OUT<13>)
+     FDC:D                     0.102          st_np_13
+    ----------------------------------------
+    Total                      1.736ns (0.754ns logic, 0.982ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 82 / 82
+-------------------------------------------------------------------------
+Offset:              3.071ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       st_vvip (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to st_vvip
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            41   1.222   1.419  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.430          st_vvip
+    ----------------------------------------
+    Total                      3.071ns (1.652ns logic, 1.419ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16783893 / 8
+-------------------------------------------------------------------------
+Offset:              27.947ns (Levels of Logic = 22)
+  Source:            st_np_0 (FF)
+  Destination:       result<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: st_np_0 to result<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.931  st_np_0 (st_np_0)
+     LUT4:I0->O            4   0.203   1.028  Mmux_n034221 (Madd_GND_1_o_GND_1_o_add_17_OUT_lut<1>)
+     LUT5:I0->O           10   0.203   1.104  Mmux_n034821 (Madd_GND_1_o_GND_1_o_add_29_OUT_lut<1>)
+     LUT4:I0->O            5   0.203   1.059  Mmux_n0356331 (Mmux_n035633)
+     LUT6:I1->O            2   0.203   0.981  Madd_GND_1_o_GND_1_o_add_41_OUT_cy<2>12 (Madd_GND_1_o_GND_1_o_add_41_OUT_cy<2>)
+     LUT6:I0->O            4   0.203   0.912  Mmux_n0356511 (Mmux_n035651)
+     LUT6:I3->O            2   0.205   0.961  Madd_GND_1_o_GND_1_o_add_49_OUT_cy<4>1 (Madd_GND_1_o_GND_1_o_add_49_OUT_cy<4>)
+     LUT5:I0->O            2   0.203   0.981  Mmux_n0362611 (Mmux_n036261)
+     LUT6:I0->O            4   0.203   0.912  Mmux_n036261 (Madd_GND_1_o_GND_1_o_add_57_OUT_lut<5>)
+     LUT3:I0->O            3   0.205   1.015  Mmux_n0368611 (Mmux_n036861)
+     LUT6:I0->O            2   0.203   0.721  Mmux_n036861 (Madd_GND_1_o_GND_1_o_add_69_OUT_lut<5>)
+     LUT6:I4->O            2   0.203   0.721  Mmux_n037261 (Madd_GND_1_o_GND_1_o_add_77_OUT_lut<5>)
+     LUT6:I4->O            5   0.203   0.819  Mmux_n037661 (Madd_GND_1_o_GND_1_o_add_85_OUT_lut<5>)
+     LUT4:I2->O            3   0.203   1.015  Mmux_n038061 (Madd_GND_1_o_GND_1_o_add_93_OUT_lut<5>)
+     LUT6:I0->O            6   0.203   1.109  Mmux_n038461 (Madd_GND_1_o_GND_1_o_add_101_OUT_lut<5>)
+     LUT6:I0->O            7   0.203   1.118  Mmux_n039261 (Madd_GND_1_o_GND_1_o_add_117_OUT_lut<5>)
+     LUT6:I1->O            2   0.203   0.961  Madd_GND_1_o_GND_1_o_add_121_OUT_cy<5>1 (Madd_GND_1_o_GND_1_o_add_121_OUT_cy<5>)
+     LUT6:I1->O            1   0.203   0.924  Mmux_n0396811 (Mmux_n039681)
+     LUT5:I0->O            1   0.203   0.944  Mmux_n039682 (Madd_GND_1_o_GND_1_o_add_125_OUT_lut<7>)
+     LUT6:I0->O            1   0.203   0.924  Mmux_n040682 (Madd_GND_1_o_GND_1_o_add_145_OUT_lut<7>)
+     LUT5:I0->O            1   0.203   0.944  Mmux_n041281 (Madd_GND_1_o_GND_1_o_add_157_OUT_lut<7>)
+     LUT6:I0->O            1   0.203   0.579  Mmux_result81 (result_7_OBUF)
+     OBUF:I->O                 2.571          result_7_OBUF (result<7>)
+    ----------------------------------------
+    Total                     27.947ns (7.285ns logic, 20.662ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.736|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.68 secs
+ 
+--> 
+
+Total memory usage is 4508900 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

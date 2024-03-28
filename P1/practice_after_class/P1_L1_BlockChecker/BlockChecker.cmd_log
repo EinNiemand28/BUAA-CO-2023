@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/file/study/2023Autumn/computer_composition/experiment/P1/P1_L1_BlockChecker/BlockChecker.xst" -ofn "D:/file/study/2023Autumn/computer_composition/experiment/P1/P1_L1_BlockChecker/BlockChecker.syr" 

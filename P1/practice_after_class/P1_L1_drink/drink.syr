@@ -1,0 +1,434 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: drink.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "drink.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "drink"
+Output Format                      : NGC
+Target Device                      : xa6slx4-3-csg225
+
+---- Source Options
+Top Module Name                    : drink
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\file\study\2023Autumn\computer_composition\experiment\P1\practice_after_class\P1_L1_drink\drink.v" into library work
+Parsing module <drink>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <drink>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <drink>.
+    Related source file is "D:\file\study\2023Autumn\computer_composition\experiment\P1\practice_after_class\P1_L1_drink\drink.v".
+    Found 2-bit register for signal <st>.
+    Found 2-bit register for signal <money>.
+    Found 1-bit register for signal <flag>.
+    Found 1-bit register for signal <flag2>.
+    Found finite state machine <FSM_0> for signal <st>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit 4-to-1 multiplexer for signal <st[1]_PWR_1_o_wide_mux_37_OUT> created at line 55.
+WARNING:Xst:737 - Found 1-bit latch for signal <drink>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <drink> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 2
+ 2-bit 2-to-1 multiplexer                              : 3
+ 2-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 2
+ 2-bit 2-to-1 multiplexer                              : 3
+ 2-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <st[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+
+Optimizing unit <drink> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block drink, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : drink.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 9
+#      LUT3                        : 2
+#      LUT4                        : 4
+#      LUT5                        : 3
+# FlipFlops/Latches                : 7
+#      FDC                         : 5
+#      FDCE                        : 1
+#      LD_1                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 6
+#      IBUF                        : 3
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa6slx4csg225-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               6  out of   4800     0%  
+ Number of Slice LUTs:                    9  out of   2400     0%  
+    Number used as Logic:                 9  out of   2400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      9
+   Number with an unused Flip Flop:       3  out of      9    33%  
+   Number with an unused LUT:             0  out of      9     0%  
+   Number of fully used LUT-FF pairs:     6  out of      9    66%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    132     5%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 6     |
+flag                               | NONE(drink)            | 1     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.429ns (Maximum Frequency: 411.777MHz)
+   Minimum input arrival time before clock: 3.347ns
+   Maximum output required time after clock: 4.647ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.429ns (frequency: 411.777MHz)
+  Total number of paths / destination ports: 17 / 7
+-------------------------------------------------------------------------
+Delay:               2.429ns (Levels of Logic = 1)
+  Source:            st_FSM_FFd2 (FF)
+  Destination:       flag (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: st_FSM_FFd2 to flag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.447   0.878  st_FSM_FFd2 (st_FSM_FFd2)
+     LUT4:I2->O            1   0.203   0.579  _n0100_inv1 (_n0100_inv)
+     FDCE:CE                   0.322          flag
+    ----------------------------------------
+    Total                      2.429ns (0.972ns logic, 1.457ns route)
+                                       (40.0% logic, 60.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 20 / 13
+-------------------------------------------------------------------------
+Offset:              3.347ns (Levels of Logic = 2)
+  Source:            coin<0> (PAD)
+  Destination:       flag (FF)
+  Destination Clock: clk rising
+
+  Data Path: coin<0> to flag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   1.021  coin_0_IBUF (coin_0_IBUF)
+     LUT4:I0->O            1   0.203   0.579  _n0100_inv1 (_n0100_inv)
+     FDCE:CE                   0.322          flag
+    ----------------------------------------
+    Total                      3.347ns (1.747ns logic, 1.600ns route)
+                                       (52.2% logic, 47.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 2
+-------------------------------------------------------------------------
+Offset:              4.647ns (Levels of Logic = 2)
+  Source:            money_1 (FF)
+  Destination:       back<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: money_1 to back<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.845  money_1 (money_1)
+     LUT3:I0->O            1   0.205   0.579  Mmux_back21 (back_1_OBUF)
+     OBUF:I->O                 2.571          back_1_OBUF (back<1>)
+    ----------------------------------------
+    Total                      4.647ns (3.223ns logic, 1.424ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'flag'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            drink (LATCH)
+  Destination:       drink (PAD)
+  Source Clock:      flag rising
+
+  Data Path: drink to drink
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.498   0.579  drink (drink_OBUF)
+     OBUF:I->O                 2.571          drink_OBUF (drink)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.429|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock flag
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.167|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.48 secs
+ 
+--> 
+
+Total memory usage is 4491648 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/file/study/2023Autumn/computer_composition/experiment/P1/practice_after_class/P1_L2_check110011/fsm_tb_isim_beh.exe" -prj "D:/file/study/2023Autumn/computer_composition/experiment/P1/practice_after_class/P1_L2_check110011/fsm_tb_beh.prj" "work.fsm_tb" "work.glbl" 

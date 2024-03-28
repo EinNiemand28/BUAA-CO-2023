@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/file/study/2023Autumn/computer_composition/experiment/P1/exam_in_class/P1_L4_coloring_2023/coloring.xst" -ofn "D:/file/study/2023Autumn/computer_composition/experiment/P1/exam_in_class/P1_L4_coloring_2023/coloring.syr" 
+xst -intstyle ise -ifn "D:/file/study/2023Autumn/computer_composition/experiment/P1/exam_in_class/P1_L4_coloring_2023/coloring.xst" -ofn "D:/file/study/2023Autumn/computer_composition/experiment/P1/exam_in_class/P1_L4_coloring_2023/coloring.syr" 
